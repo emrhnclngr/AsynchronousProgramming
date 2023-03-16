@@ -1,0 +1,11 @@
+﻿@model Page
+@{
+    ViewData["Title"] = "Page";
+}
+@if(Model is not null)
+{    
+    <h1>@Model.Content</h1>
+    @Html.Raw(Model.Content)
+}
+
+
